@@ -380,7 +380,7 @@ teamComboBox.addActionListener(new java.awt.event.ActionListener() {
             passerRatingLabel.setForeground(dal.getTextColor());            
             playerLabel.setForeground(dal.getTextColor());
             textField.setForeground(dal.getTextColor());
-         } else if (teamName.equals(dal.getName())) {
+         } else if (teamName.equals(den.getName())) {
             backgroundPanel.setBackground(den.getColor());
             teamLabel.setForeground(den.getTextColor());
             playerLabel.setForeground(den.getTextColor());
@@ -739,11 +739,11 @@ teamComboBox.addActionListener(new java.awt.event.ActionListener() {
     Teams cin = new Teams("Cincinnati Bengals", new java.awt.Color(255,255,255), new java.awt.Color(242,78,37));
     Teams cle = new Teams("Cleveland Browns", new java.awt.Color(57,16,0), new java.awt.Color(236,86,20));
     Teams dal = new Teams("Dallas Cowboys", new java.awt.Color(194,194,198), new java.awt.Color(13,37,76));
-    Teams den = new Teams("Denver Broncos", new java.awt.Color(250,77,4), new java.awt.Color(12,34,68));
+    Teams den = new Teams("Denver Broncos", new java.awt.Color(248,77,4), new java.awt.Color(12,34,68));
     Teams det = new Teams("Detroit Lions", new java.awt.Color(0,109,176), new java.awt.Color(165,172,175));
     Teams gb = new Teams("Green Bay Packers", new java.awt.Color(49,63,54), new java.awt.Color(252,207,0));
     Teams hou = new Teams("Houston Texans", new java.awt.Color(0,20,63), new java.awt.Color(201,36,63));
-    Teams ind = new Teams("Indianapolis Colts", new java.awt.Color(4,58,116), new java.awt.Color(0,0,0));
+    Teams ind = new Teams("Indianapolis Colts", new java.awt.Color(255,255,255), new java.awt.Color(4,58,116));
     Teams jax = new Teams("Jacksonville Jaguars", new java.awt.Color(0,0,0), new java.awt.Color(0,103,121));
     Teams kc = new Teams("Kansas City Chiefs", new java.awt.Color(178,0,50), new java.awt.Color(242,200,0));
     Teams mia = new Teams("Miami Dolphins", new java.awt.Color(0,140,149), new java.awt.Color(255,130,0));
