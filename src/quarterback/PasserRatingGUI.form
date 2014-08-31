@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.4" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+  <Properties>
+    <Property name="defaultCloseOperation" type="int" value="3"/>
+    <Property name="title" type="java.lang.String" value="NFL Passer Rating"/>
+  </Properties>
+  <AccessibilityProperties>
+    <Property name="AccessibleContext.accessibleDescription" type="java.lang.String" value=""/>
+  </AccessibilityProperties>
+  <SyntheticProperties>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+    <SyntheticProperty name="generateCenter" type="boolean" value="false"/>
+  </SyntheticProperties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Component id="backgroundPanel" min="-2" max="-2" attributes="0"/>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Component id="backgroundPanel" alignment="0" max="32767" attributes="0"/>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Container class="javax.swing.JPanel" name="backgroundPanel">
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" attributes="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace min="-2" pref="31" max="-2" attributes="0"/>
+                          <Component id="pictureLabel" min="-2" pref="231" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace min="-2" pref="61" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                              <Group type="102" alignment="0" attributes="0">
+                                  <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                                      <Group type="102" attributes="0">
+                                          <Component id="completionTextField" min="-2" pref="70" max="-2" attributes="0"/>
+                                          <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
+                                          <Component id="attemptTextField" min="-2" pref="70" max="-2" attributes="0"/>
+                                      </Group>
+                                      <Component id="playerLabel" min="-2" pref="170" max="-2" attributes="0"/>
+                                      <Group type="102" attributes="0">
+                                          <Component id="completionLabel" min="-2" pref="70" max="-2" attributes="0"/>
+                                          <EmptySpace max="32767" attributes="0"/>
+                                          <Component id="attemptLabel" min="-2" pref="70" max="-2" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                                  <EmptySpace min="-2" pref="151" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Group type="102" attributes="0">
+                                          <Component id="touchdownTextField" min="-2" pref="72" max="-2" attributes="0"/>
+                                          <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
+                                          <Component id="interceptionTextField" min="-2" pref="72" max="-2" attributes="0"/>
+                                      </Group>
+                                      <Component id="teamLabel" min="-2" pref="174" max="-2" attributes="0"/>
+                                      <Group type="102" alignment="0" attributes="0">
+                                          <Component id="touchdownLabel" min="-2" pref="72" max="-2" attributes="0"/>
+                                          <EmptySpace max="32767" attributes="0"/>
+                                          <Component id="interceptionLabel" min="-2" pref="86" max="-2" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                              </Group>
+                              <Group type="102" alignment="1" attributes="0">
+                                  <Component id="playerTextField" min="-2" pref="170" max="-2" attributes="0"/>
+                                  <EmptySpace min="-2" pref="151" max="-2" attributes="0"/>
+                                  <Component id="teamComboBox" min="-2" pref="174" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace min="-2" pref="278" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="yardTextField" min="-2" pref="71" max="-2" attributes="0"/>
+                              <Component id="yardLabel" alignment="0" min="-2" pref="71" max="-2" attributes="0"/>
+                              <Group type="103" alignment="0" groupAlignment="1" attributes="0">
+                                  <Component id="passerRatingFormattedTextField" min="-2" pref="70" max="-2" attributes="0"/>
+                                  <Component id="convertButton" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <Group type="102" alignment="0" attributes="0">
+                                  <EmptySpace min="-2" pref="1" max="-2" attributes="0"/>
+                                  <Component id="passerRatingLabel" min="-2" pref="85" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace min="-2" pref="207" max="-2" attributes="0"/>
+                          <Component id="textField" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <EmptySpace min="-2" pref="65" max="-2" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace min="-2" pref="36" max="-2" attributes="0"/>
+                  <Component id="textField" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="pictureLabel" min="-2" pref="105" max="-2" attributes="0"/>
+                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="teamComboBox" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="playerTextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="teamLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="playerLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="completionTextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="attemptTextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="yardTextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="touchdownTextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="interceptionTextField" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="completionLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="attemptLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="yardLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="interceptionLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="touchdownLabel" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace min="-2" pref="31" max="-2" attributes="0"/>
+                  <Component id="convertButton" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                  <Component id="passerRatingFormattedTextField" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                  <Component id="passerRatingLabel" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="84" max="-2" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Component class="javax.swing.JTextField" name="playerTextField">
+        </Component>
+        <Component class="javax.swing.JTextField" name="completionTextField">
+        </Component>
+        <Component class="javax.swing.JTextField" name="attemptTextField">
+        </Component>
+        <Component class="javax.swing.JTextField" name="yardTextField">
+        </Component>
+        <Component class="javax.swing.JTextField" name="touchdownTextField">
+        </Component>
+        <Component class="javax.swing.JTextField" name="interceptionTextField">
+        </Component>
+        <Component class="javax.swing.JLabel" name="playerLabel">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Tahoma" size="11" style="1"/>
+            </Property>
+            <Property name="horizontalAlignment" type="int" value="0"/>
+            <Property name="text" type="java.lang.String" value="Player"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="teamLabel">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Tahoma" size="11" style="1"/>
+            </Property>
+            <Property name="horizontalAlignment" type="int" value="0"/>
+            <Property name="text" type="java.lang.String" value="Team"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="completionLabel">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Tahoma" size="11" style="1"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Completions"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="attemptLabel">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Tahoma" size="11" style="1"/>
+            </Property>
+            <Property name="horizontalAlignment" type="int" value="0"/>
+            <Property name="text" type="java.lang.String" value="Attempts"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="yardLabel">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Tahoma" size="11" style="1"/>
+            </Property>
+            <Property name="horizontalAlignment" type="int" value="0"/>
+            <Property name="text" type="java.lang.String" value="Yards"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="touchdownLabel">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Tahoma" size="11" style="1"/>
+            </Property>
+            <Property name="horizontalAlignment" type="int" value="0"/>
+            <Property name="text" type="java.lang.String" value="Touchdowns"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="passerRatingLabel">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Tahoma" size="11" style="1"/>
+            </Property>
+            <Property name="horizontalAlignment" type="int" value="0"/>
+            <Property name="text" type="java.lang.String" value="Passer Rating"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="interceptionLabel">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Tahoma" size="11" style="1"/>
+            </Property>
+            <Property name="horizontalAlignment" type="int" value="0"/>
+            <Property name="text" type="java.lang.String" value="Interceptions"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="convertButton">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Tahoma" size="11" style="1"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Convert"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="convertButtonActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JComboBox" name="teamComboBox">
+          <Properties>
+            <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
+              <Connection code="new javax.swing.DefaultComboBoxModel(new String[] {&quot;NFL Team&quot;, az.getName(), atl.getName(), bal.getName(), buf.getName(), car.getName(), chi.getName(), cin.getName(), cle.getName(),&#xa;    dal.getName(), den.getName(), det.getName(), gb.getName(), hou.getName(), ind.getName(), jax.getName(), kc.getName(),&#xa;    mia.getName(), min.getName(), ne.getName(), no.getName(), nyg.getName(), nyj.getName(), oak.getName(), phi.getName(),&#xa;    pit.getName(), sd.getName(), sf.getName(), sea.getName(), stl.getName(), tb.getName(), ten.getName(), was.getName() })" type="code"/>
+            </Property>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="teamComboBoxActionPerformed"/>
+          </Events>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_DeclarationPost" type="java.lang.String" value="Teams az = new Teams(&quot;Arizona Cardinals&quot;, new java.awt.Color(176,5,57), new java.awt.Color(0,0,0));&#xa;Teams atl = new Teams(&quot;Atlanta Falcons&quot;, new java.awt.Color(201, 35,63), new java.awt.Color(0,0,0));&#xa;Teams bal = new Teams(&quot;Baltimore Ravens&quot;, new java.awt.Color(36,18,92), new java.awt.Color(228,178,12));&#xa;Teams buf = new Teams(&quot;Buffalo Bills&quot;, new java.awt.Color(255,255,255), new java.awt.Color(4,50,132));&#xa;Teams car = new Teams(&quot;Carolina Panthers&quot;, new java.awt.Color(0,0,0), new java.awt.Color(4,152,215));&#xa;Teams chi = new Teams(&quot;Chicago Bears&quot;, new java.awt.Color(0,20,44), new java.awt.Color(223,97,8));&#xa;Teams cin = new Teams(&quot;Cincinnati Bengals&quot;, new java.awt.Color(255,255,255), new java.awt.Color(242,78,37));&#xa;Teams cle = new Teams(&quot;Cleveland Browns&quot;, new java.awt.Color(57,16,0), new java.awt.Color(236,86,20));&#xa;Teams dal = new Teams(&quot;Dallas Cowboys&quot;, new java.awt.Color(194,194,198), new java.awt.Color(13,37,76));&#xa;Teams den = new Teams(&quot;Denver Broncos&quot;, new java.awt.Color(250,77,4), new java.awt.Color(12,34,68));&#xa;Teams det = new Teams(&quot;Detroit Lions&quot;, new java.awt.Color(0,109,176), new java.awt.Color(165,172,175));&#xa;Teams gb = new Teams(&quot;Green Bay Packers&quot;, new java.awt.Color(49,63,54), new java.awt.Color(252,207,0));&#xa;Teams hou = new Teams(&quot;Houston Texans&quot;, new java.awt.Color(0,20,63), new java.awt.Color(201,36,63));&#xa;Teams ind = new Teams(&quot;Indianapolis Colts&quot;, new java.awt.Color(4,58,116), new java.awt.Color(0,0,0));&#xa;Teams jax = new Teams(&quot;Jacksonville Jaguars&quot;, new java.awt.Color(0,0,0), new java.awt.Color(0,103,121));&#xa;Teams kc = new Teams(&quot;Kansas City Chiefs&quot;, new java.awt.Color(178,0,50), new java.awt.Color(242,200,0));&#xa;Teams mia = new Teams(&quot;Miami Dolphins&quot;, new java.awt.Color(0,140,149), new java.awt.Color(255,130,0));&#xa;Teams min = new Teams(&quot;Minnesota Vikings&quot;, new java.awt.Color(88,44,131), new java.awt.Color(255,199,44));&#xa;Teams ne = new Teams(&quot;New England Patriots&quot;, new java.awt.Color(12,34,68), new java.awt.Color(220,221,221));&#xa;Teams no = new Teams(&quot;New Orleans Saints&quot;, new java.awt.Color(0,0,0), new java.awt.Color(201,176,116));&#xa;Teams nyg = new Teams(&quot;New York Giants&quot;, new java.awt.Color(25,46,108), new java.awt.Color(175,3,52));&#xa;Teams nyj = new Teams(&quot;New York Jets&quot;, new java.awt.Color(255,255,255), new java.awt.Color(28,50,44));&#xa;Teams oak = new Teams(&quot;Oakland Raiders&quot;, new java.awt.Color(196,202,204), new java.awt.Color(0,0,0));&#xa;Teams phi = new Teams(&quot;Philadelphia Eagles&quot;, new java.awt.Color(0,70,79), new java.awt.Color(0,0,0));&#xa;Teams pit = new Teams(&quot;Pittsburgh Steelers&quot;, new java.awt.Color(0,0,0), new java.awt.Color(252,186,28));&#xa;Teams sd = new Teams(&quot;San Diego Chargers&quot;, new java.awt.Color(255,255,255), new java.awt.Color(0,23,60));&#xa;Teams sf = new Teams(&quot;San Francisco 49ers&quot;, new java.awt.Color(188,160,93), new java.awt.Color(196,3,30));&#xa;Teams sea = new Teams(&quot;Seattle Seahawks&quot;, new java.awt.Color(12,34,68), new java.awt.Color(125,91,36));&#xa;Teams stl = new Teams(&quot;St. Louis Rams&quot;, new java.awt.Color(13,37,76), new java.awt.Color(201,176,116));&#xa;Teams tb = new Teams(&quot;Tampa Bay Buccaneers&quot;, new java.awt.Color(107,98,48), new java.awt.Color(214,10,11));&#xa;Teams ten = new Teams(&quot;Tennessee Titans&quot;, new java.awt.Color(255,255,255), new java.awt.Color(100,143,204));&#xa;Teams was = new Teams(&quot;Washington Redskins&quot;, new java.awt.Color(87,32,46), new java.awt.Color(241,197,0));"/>
+          </AuxValues>
+        </Component>
+        <Component class="javax.swing.JFormattedTextField" name="passerRatingFormattedTextField">
+        </Component>
+        <Component class="javax.swing.JLabel" name="textField">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Tahoma" size="24" style="1"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="NFL Passer Rating"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="pictureLabel">
+        </Component>
+      </SubComponents>
+    </Container>
+  </SubComponents>
+</Form>
