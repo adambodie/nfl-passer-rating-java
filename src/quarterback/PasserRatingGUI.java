@@ -120,9 +120,6 @@ teamComboBox.addActionListener(new java.awt.event.ActionListener() {
         .addGroup(backgroundPanelLayout.createSequentialGroup()
             .addGroup(backgroundPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(backgroundPanelLayout.createSequentialGroup()
-                    .addGap(31, 31, 31)
-                    .addComponent(pictureLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 231, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGroup(backgroundPanelLayout.createSequentialGroup()
                     .addGap(61, 61, 61)
                     .addGroup(backgroundPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                         .addGroup(javax.swing.GroupLayout.Alignment.LEADING, backgroundPanelLayout.createSequentialGroup()
@@ -152,6 +149,9 @@ teamComboBox.addActionListener(new java.awt.event.ActionListener() {
                             .addGap(151, 151, 151)
                             .addComponent(teamComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, 174, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addGroup(backgroundPanelLayout.createSequentialGroup()
+                    .addGap(207, 207, 207)
+                    .addComponent(textField))
+                .addGroup(backgroundPanelLayout.createSequentialGroup()
                     .addGap(278, 278, 278)
                     .addGroup(backgroundPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                         .addComponent(yardTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -163,9 +163,9 @@ teamComboBox.addActionListener(new java.awt.event.ActionListener() {
                             .addGap(1, 1, 1)
                             .addComponent(passerRatingLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addGroup(backgroundPanelLayout.createSequentialGroup()
-                    .addGap(207, 207, 207)
-                    .addComponent(textField)))
-            .addGap(65, 65, 65))
+                    .addGap(31, 31, 31)
+                    .addComponent(pictureLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 250, javax.swing.GroupLayout.PREFERRED_SIZE)))
+            .addContainerGap(83, Short.MAX_VALUE))
     );
     backgroundPanelLayout.setVerticalGroup(
         backgroundPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -173,8 +173,8 @@ teamComboBox.addActionListener(new java.awt.event.ActionListener() {
             .addGap(36, 36, 36)
             .addComponent(textField)
             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-            .addComponent(pictureLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 105, javax.swing.GroupLayout.PREFERRED_SIZE)
-            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+            .addComponent(pictureLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
             .addGroup(backgroundPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                 .addComponent(teamComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addComponent(playerTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -209,7 +209,7 @@ teamComboBox.addActionListener(new java.awt.event.ActionListener() {
     getContentPane().setLayout(layout);
     layout.setHorizontalGroup(
         layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-        .addComponent(backgroundPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+        .addComponent(backgroundPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
     );
     layout.setVerticalGroup(
         layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -271,7 +271,6 @@ teamComboBox.addActionListener(new java.awt.event.ActionListener() {
         String teamName = (String)cb.getSelectedItem();
         pictureLabel.setIcon(createImageIcon(teamName
                                         + ".gif"));
-        
         if (teamName.equals(az.getName())) {
             backgroundPanel.setBackground(az.getColor());
             teamLabel.setForeground(az.getTextColor());
@@ -283,7 +282,9 @@ teamComboBox.addActionListener(new java.awt.event.ActionListener() {
             interceptionLabel.setForeground(az.getTextColor());
             passerRatingLabel.setForeground(az.getTextColor());            
             playerLabel.setForeground(az.getTextColor());
-            textField.setForeground(az.getTextColor());            
+            textField.setForeground(az.getTextColor());   
+            convertButton.setForeground(az.getTextColor());
+            convertButton.setBackground(az.getColor());
         } else if (teamName.equals(atl.getName())) {
             backgroundPanel.setBackground(atl.getColor());
             teamLabel.setForeground(atl.getTextColor());
@@ -296,6 +297,8 @@ teamComboBox.addActionListener(new java.awt.event.ActionListener() {
             passerRatingLabel.setForeground(atl.getTextColor());            
             playerLabel.setForeground(atl.getTextColor());
             textField.setForeground(atl.getTextColor());
+            convertButton.setForeground(atl.getTextColor());
+            convertButton.setBackground(atl.getColor());
          } else if (teamName.equals(bal.getName())) {
             backgroundPanel.setBackground(bal.getColor());
             teamLabel.setForeground(bal.getTextColor());
@@ -308,6 +311,8 @@ teamComboBox.addActionListener(new java.awt.event.ActionListener() {
             passerRatingLabel.setForeground(bal.getTextColor());            
             playerLabel.setForeground(bal.getTextColor());
             textField.setForeground(bal.getTextColor());
+            convertButton.setForeground(bal.getTextColor());
+            convertButton.setBackground(bal.getColor());
            } else if (teamName.equals(buf.getName())) {
             backgroundPanel.setBackground(buf.getColor());
             teamLabel.setForeground(buf.getTextColor());
@@ -320,6 +325,8 @@ teamComboBox.addActionListener(new java.awt.event.ActionListener() {
             passerRatingLabel.setForeground(buf.getTextColor());            
             playerLabel.setForeground(buf.getTextColor());
             textField.setForeground(buf.getTextColor());
+            convertButton.setForeground(buf.getTextColor());
+            convertButton.setBackground(buf.getColor());
          } else if (teamName.equals(car.getName())) {
             backgroundPanel.setBackground(car.getColor());
             teamLabel.setForeground(car.getTextColor());
@@ -332,6 +339,8 @@ teamComboBox.addActionListener(new java.awt.event.ActionListener() {
             passerRatingLabel.setForeground(car.getTextColor());            
             playerLabel.setForeground(car.getTextColor());
             textField.setForeground(car.getTextColor());
+            convertButton.setForeground(car.getTextColor());
+            convertButton.setBackground(car.getColor());
         } else if (teamName.equals(chi.getName())) {
             backgroundPanel.setBackground(chi.getColor());
             teamLabel.setForeground(chi.getTextColor());
@@ -344,6 +353,8 @@ teamComboBox.addActionListener(new java.awt.event.ActionListener() {
             passerRatingLabel.setForeground(chi.getTextColor());            
             playerLabel.setForeground(chi.getTextColor());
             textField.setForeground(chi.getTextColor());
+            convertButton.setForeground(chi.getTextColor());
+            convertButton.setBackground(chi.getColor());
            } else if (teamName.equals(cin.getName())) {
             backgroundPanel.setBackground(cin.getColor());
             teamLabel.setForeground(cin.getTextColor());
@@ -356,6 +367,8 @@ teamComboBox.addActionListener(new java.awt.event.ActionListener() {
             passerRatingLabel.setForeground(cin.getTextColor());            
             playerLabel.setForeground(cin.getTextColor());
             textField.setForeground(cin.getTextColor());
+            convertButton.setForeground(cin.getTextColor());
+            convertButton.setBackground(cin.getColor());            
          } else if (teamName.equals(cle.getName())) {
             backgroundPanel.setBackground(cle.getColor());
             teamLabel.setForeground(cle.getTextColor());
@@ -368,6 +381,8 @@ teamComboBox.addActionListener(new java.awt.event.ActionListener() {
             passerRatingLabel.setForeground(cle.getTextColor());            
             playerLabel.setForeground(cle.getTextColor());
             textField.setForeground(cle.getTextColor());
+            convertButton.setForeground(cle.getTextColor());
+            convertButton.setBackground(cle.getColor());            
            } else if (teamName.equals(dal.getName())) {
             backgroundPanel.setBackground(dal.getColor());
             teamLabel.setForeground(dal.getTextColor());
@@ -380,6 +395,8 @@ teamComboBox.addActionListener(new java.awt.event.ActionListener() {
             passerRatingLabel.setForeground(dal.getTextColor());            
             playerLabel.setForeground(dal.getTextColor());
             textField.setForeground(dal.getTextColor());
+            convertButton.setForeground(dal.getTextColor());
+            convertButton.setBackground(dal.getColor());            
          } else if (teamName.equals(den.getName())) {
             backgroundPanel.setBackground(den.getColor());
             teamLabel.setForeground(den.getTextColor());
@@ -392,6 +409,8 @@ teamComboBox.addActionListener(new java.awt.event.ActionListener() {
             passerRatingLabel.setForeground(den.getTextColor());            
             playerLabel.setForeground(den.getTextColor());
             textField.setForeground(den.getTextColor());
+            convertButton.setForeground(den.getTextColor());
+            convertButton.setBackground(den.getColor());            
            } else if (teamName.equals(det.getName())) {
             backgroundPanel.setBackground(det.getColor());
             teamLabel.setForeground(det.getTextColor());
@@ -404,6 +423,8 @@ teamComboBox.addActionListener(new java.awt.event.ActionListener() {
             passerRatingLabel.setForeground(det.getTextColor());            
             playerLabel.setForeground(det.getTextColor());
             textField.setForeground(det.getTextColor());
+            convertButton.setForeground(det.getTextColor());
+            convertButton.setBackground(det.getColor());            
          } else if (teamName.equals(gb.getName())) {
             backgroundPanel.setBackground(gb.getColor());
             teamLabel.setForeground(gb.getTextColor());
@@ -416,6 +437,8 @@ teamComboBox.addActionListener(new java.awt.event.ActionListener() {
             passerRatingLabel.setForeground(gb.getTextColor());            
             playerLabel.setForeground(gb.getTextColor());
             textField.setForeground(gb.getTextColor());
+            convertButton.setForeground(gb.getTextColor());
+            convertButton.setBackground(gb.getColor());            
         } else if (teamName.equals(hou.getName())) {
             backgroundPanel.setBackground(hou.getColor());
             teamLabel.setForeground(hou.getTextColor());
@@ -428,6 +451,8 @@ teamComboBox.addActionListener(new java.awt.event.ActionListener() {
             passerRatingLabel.setForeground(hou.getTextColor());            
             playerLabel.setForeground(hou.getTextColor());
             textField.setForeground(hou.getTextColor());
+            convertButton.setForeground(hou.getTextColor());
+            convertButton.setBackground(hou.getColor());            
            } else if (teamName.equals(ind.getName())) {
             backgroundPanel.setBackground(ind.getColor());
             teamLabel.setForeground(ind.getTextColor());
@@ -440,6 +465,8 @@ teamComboBox.addActionListener(new java.awt.event.ActionListener() {
             passerRatingLabel.setForeground(ind.getTextColor());            
             playerLabel.setForeground(ind.getTextColor());
             textField.setForeground(ind.getTextColor());
+            convertButton.setForeground(ind.getTextColor());
+            convertButton.setBackground(ind.getColor());            
          } else if (teamName.equals(jax.getName())) {
             backgroundPanel.setBackground(jax.getColor());
             teamLabel.setForeground(jax.getTextColor());
@@ -452,6 +479,8 @@ teamComboBox.addActionListener(new java.awt.event.ActionListener() {
             passerRatingLabel.setForeground(jax.getTextColor());            
             playerLabel.setForeground(jax.getTextColor());
             textField.setForeground(jax.getTextColor());
+            convertButton.setForeground(jax.getTextColor());
+            convertButton.setBackground(jax.getColor());               
         } else if (teamName.equals(kc.getName())) {
             backgroundPanel.setBackground(kc.getColor());
             teamLabel.setForeground(kc.getTextColor());
@@ -464,6 +493,8 @@ teamComboBox.addActionListener(new java.awt.event.ActionListener() {
             passerRatingLabel.setForeground(kc.getTextColor());            
             playerLabel.setForeground(kc.getTextColor());
             textField.setForeground(kc.getTextColor());
+            convertButton.setForeground(kc.getTextColor());
+            convertButton.setBackground(kc.getColor());                
          } else if (teamName.equals(mia.getName())) {
             backgroundPanel.setBackground(mia.getColor());
             teamLabel.setForeground(mia.getTextColor());
@@ -476,6 +507,8 @@ teamComboBox.addActionListener(new java.awt.event.ActionListener() {
             passerRatingLabel.setForeground(mia.getTextColor());            
             playerLabel.setForeground(mia.getTextColor());
             textField.setForeground(mia.getTextColor());
+            convertButton.setForeground(mia.getTextColor());
+            convertButton.setBackground(mia.getColor());                
            } else if (teamName.equals(min.getName())) {
             backgroundPanel.setBackground(min.getColor());
             teamLabel.setForeground(min.getTextColor());
@@ -488,6 +521,8 @@ teamComboBox.addActionListener(new java.awt.event.ActionListener() {
             passerRatingLabel.setForeground(min.getTextColor());            
             playerLabel.setForeground(min.getTextColor());
             textField.setForeground(min.getTextColor());
+            convertButton.setForeground(min.getTextColor());
+            convertButton.setBackground(min.getColor());                
          } else if (teamName.equals(ne.getName())) {
             backgroundPanel.setBackground(ne.getColor());
             teamLabel.setForeground(ne.getTextColor());
@@ -500,6 +535,8 @@ teamComboBox.addActionListener(new java.awt.event.ActionListener() {
             passerRatingLabel.setForeground(ne.getTextColor());            
             playerLabel.setForeground(ne.getTextColor());
             textField.setForeground(ne.getTextColor());
+            convertButton.setForeground(ne.getTextColor());
+            convertButton.setBackground(ne.getColor());                
         } else if (teamName.equals(no.getName())) {
             backgroundPanel.setBackground(no.getColor());
             teamLabel.setForeground(no.getTextColor());
@@ -512,6 +549,8 @@ teamComboBox.addActionListener(new java.awt.event.ActionListener() {
             passerRatingLabel.setForeground(no.getTextColor());            
             playerLabel.setForeground(no.getTextColor());
             textField.setForeground(no.getTextColor());
+            convertButton.setForeground(no.getTextColor());
+            convertButton.setBackground(no.getColor());                
            } else if (teamName.equals(nyg.getName())) {
             backgroundPanel.setBackground(nyg.getColor());
             teamLabel.setForeground(nyg.getTextColor());
@@ -524,6 +563,8 @@ teamComboBox.addActionListener(new java.awt.event.ActionListener() {
             passerRatingLabel.setForeground(nyg.getTextColor());            
             playerLabel.setForeground(nyg.getTextColor());
             textField.setForeground(nyg.getTextColor());
+            convertButton.setForeground(nyg.getTextColor());
+            convertButton.setBackground(nyg.getColor());                
          } else if (teamName.equals(nyj.getName())) {
             backgroundPanel.setBackground(nyj.getColor());
             teamLabel.setForeground(nyj.getTextColor());
@@ -536,6 +577,8 @@ teamComboBox.addActionListener(new java.awt.event.ActionListener() {
             passerRatingLabel.setForeground(nyj.getTextColor());            
             playerLabel.setForeground(nyj.getTextColor());
             textField.setForeground(nyj.getTextColor());
+            convertButton.setForeground(nyj.getTextColor());
+            convertButton.setBackground(nyj.getColor());                
            } else if (teamName.equals(oak.getName())) {
             backgroundPanel.setBackground(oak.getColor());
             teamLabel.setForeground(oak.getTextColor());
@@ -547,7 +590,9 @@ teamComboBox.addActionListener(new java.awt.event.ActionListener() {
             passerRatingLabel.setForeground(oak.getTextColor());            
             playerLabel.setForeground(oak.getTextColor());
             textField.setForeground(oak.getTextColor());
-         } else if (teamName.equals(oak.getName())) {
+            convertButton.setForeground(oak.getTextColor());
+            convertButton.setBackground(oak.getColor());                
+         } else if (teamName.equals(phi.getName())) {
             backgroundPanel.setBackground(phi.getColor());
             teamLabel.setForeground(phi.getTextColor());
             playerLabel.setForeground(phi.getTextColor());
@@ -559,6 +604,8 @@ teamComboBox.addActionListener(new java.awt.event.ActionListener() {
             passerRatingLabel.setForeground(phi.getTextColor());            
             playerLabel.setForeground(phi.getTextColor());
             textField.setForeground(phi.getTextColor());
+            convertButton.setForeground(phi.getTextColor());
+            convertButton.setBackground(phi.getColor());                
            } else if (teamName.equals(pit.getName())) {
             backgroundPanel.setBackground(pit.getColor());
             teamLabel.setForeground(pit.getTextColor());
@@ -571,6 +618,8 @@ teamComboBox.addActionListener(new java.awt.event.ActionListener() {
             passerRatingLabel.setForeground(pit.getTextColor());            
             playerLabel.setForeground(pit.getTextColor());
             textField.setForeground(pit.getTextColor());
+            convertButton.setForeground(pit.getTextColor());
+            convertButton.setBackground(pit.getColor());                
          } else if (teamName.equals(sd.getName())) {
             backgroundPanel.setBackground(sd.getColor());
             teamLabel.setForeground(sd.getTextColor());
@@ -583,6 +632,8 @@ teamComboBox.addActionListener(new java.awt.event.ActionListener() {
             passerRatingLabel.setForeground(sd.getTextColor());            
             playerLabel.setForeground(sd.getTextColor());
             textField.setForeground(sd.getTextColor());
+            convertButton.setForeground(sd.getTextColor());
+            convertButton.setBackground(sd.getColor());                
         } else if (teamName.equals(sf.getName())) {
             backgroundPanel.setBackground(sf.getColor());
             teamLabel.setForeground(sf.getTextColor());
@@ -595,6 +646,8 @@ teamComboBox.addActionListener(new java.awt.event.ActionListener() {
             passerRatingLabel.setForeground(sf.getTextColor());            
             playerLabel.setForeground(sf.getTextColor());
             textField.setForeground(sf.getTextColor());
+            convertButton.setForeground(sf.getTextColor());
+            convertButton.setBackground(sf.getColor());                
            } else if (teamName.equals(sea.getName())) {
             backgroundPanel.setBackground(sea.getColor());
             teamLabel.setForeground(sea.getTextColor());
@@ -607,6 +660,8 @@ teamComboBox.addActionListener(new java.awt.event.ActionListener() {
             passerRatingLabel.setForeground(sea.getTextColor());            
             playerLabel.setForeground(sea.getTextColor());
             textField.setForeground(sea.getTextColor());
+            convertButton.setForeground(sea.getTextColor());
+            convertButton.setBackground(sea.getColor());                
          } else if (teamName.equals(stl.getName())) {
             backgroundPanel.setBackground(stl.getColor());
             teamLabel.setForeground(stl.getTextColor());
@@ -619,6 +674,8 @@ teamComboBox.addActionListener(new java.awt.event.ActionListener() {
             passerRatingLabel.setForeground(stl.getTextColor());            
             playerLabel.setForeground(stl.getTextColor());
             textField.setForeground(stl.getTextColor());
+            convertButton.setForeground(stl.getTextColor());
+            convertButton.setBackground(stl.getColor());                
         } else if (teamName.equals(tb.getName())) {
             backgroundPanel.setBackground(tb.getColor());
             teamLabel.setForeground(tb.getTextColor());
@@ -631,6 +688,8 @@ teamComboBox.addActionListener(new java.awt.event.ActionListener() {
             passerRatingLabel.setForeground(tb.getTextColor());            
             playerLabel.setForeground(tb.getTextColor());
             textField.setForeground(tb.getTextColor());
+            convertButton.setForeground(tb.getTextColor());
+            convertButton.setBackground(tb.getColor());                
         } else if (teamName.equals(ten.getName())) {
             backgroundPanel.setBackground(ten.getColor());
             teamLabel.setForeground(ten.getTextColor());
@@ -643,6 +702,8 @@ teamComboBox.addActionListener(new java.awt.event.ActionListener() {
             passerRatingLabel.setForeground(ten.getTextColor());            
             playerLabel.setForeground(ten.getTextColor());
             textField.setForeground(ten.getTextColor());
+            convertButton.setForeground(ten.getTextColor());
+            convertButton.setBackground(ten.getColor());                
            } else if (teamName.equals(was.getName())) {
             backgroundPanel.setBackground(was.getColor());
             teamLabel.setForeground(was.getTextColor());
@@ -655,6 +716,8 @@ teamComboBox.addActionListener(new java.awt.event.ActionListener() {
             passerRatingLabel.setForeground(was.getTextColor());            
             playerLabel.setForeground(was.getTextColor());
             textField.setForeground(was.getTextColor());
+            convertButton.setForeground(was.getTextColor());
+            convertButton.setBackground(was.getColor());                
          } else {
             backgroundPanel.setBackground(Color.white);
             teamLabel.setForeground(Color.black);
@@ -731,36 +794,36 @@ teamComboBox.addActionListener(new java.awt.event.ActionListener() {
     private javax.swing.JTextField playerTextField;
     private javax.swing.JComboBox teamComboBox;
     Teams az = new Teams("Arizona Cardinals", new java.awt.Color(176,5,57), new java.awt.Color(0,0,0));
-    Teams atl = new Teams("Atlanta Falcons", new java.awt.Color(201, 35,63), new java.awt.Color(0,0,0));
+    Teams atl = new Teams("Atlanta Falcons", new java.awt.Color(0,0,0), new java.awt.Color(201,35,63));
     Teams bal = new Teams("Baltimore Ravens", new java.awt.Color(36,18,92), new java.awt.Color(228,178,12));
-    Teams buf = new Teams("Buffalo Bills", new java.awt.Color(255,255,255), new java.awt.Color(4,50,132));
-    Teams car = new Teams("Carolina Panthers", new java.awt.Color(0,0,0), new java.awt.Color(4,152,215));
+    Teams buf = new Teams("Buffalo Bills", new java.awt.Color(4,50,132), new java.awt.Color(255,255,255));
+    Teams car = new Teams("Carolina Panthers", new java.awt.Color(214,214,214), new java.awt.Color(4,152,215));
     Teams chi = new Teams("Chicago Bears", new java.awt.Color(0,20,44), new java.awt.Color(223,97,8));
     Teams cin = new Teams("Cincinnati Bengals", new java.awt.Color(255,255,255), new java.awt.Color(242,78,37));
     Teams cle = new Teams("Cleveland Browns", new java.awt.Color(57,16,0), new java.awt.Color(236,86,20));
     Teams dal = new Teams("Dallas Cowboys", new java.awt.Color(194,194,198), new java.awt.Color(13,37,76));
     Teams den = new Teams("Denver Broncos", new java.awt.Color(248,77,4), new java.awt.Color(12,34,68));
     Teams det = new Teams("Detroit Lions", new java.awt.Color(0,109,176), new java.awt.Color(165,172,175));
-    Teams gb = new Teams("Green Bay Packers", new java.awt.Color(49,63,54), new java.awt.Color(252,207,0));
+    Teams gb = new Teams("Green Bay Packers", new java.awt.Color(252,207,0), new java.awt.Color(49,63,54));
     Teams hou = new Teams("Houston Texans", new java.awt.Color(0,20,63), new java.awt.Color(201,36,63));
     Teams ind = new Teams("Indianapolis Colts", new java.awt.Color(255,255,255), new java.awt.Color(4,58,116));
-    Teams jax = new Teams("Jacksonville Jaguars", new java.awt.Color(0,0,0), new java.awt.Color(0,103,121));
+    Teams jax = new Teams("Jacksonville Jaguars", new java.awt.Color(0,103,121), new java.awt.Color(0,0,0));
     Teams kc = new Teams("Kansas City Chiefs", new java.awt.Color(178,0,50), new java.awt.Color(242,200,0));
-    Teams mia = new Teams("Miami Dolphins", new java.awt.Color(0,140,149), new java.awt.Color(255,130,0));
+    Teams mia = new Teams("Miami Dolphins", new java.awt.Color(255,255,255), new java.awt.Color(255,130,0));
     Teams min = new Teams("Minnesota Vikings", new java.awt.Color(88,44,131), new java.awt.Color(255,199,44));
     Teams ne = new Teams("New England Patriots", new java.awt.Color(12,34,68), new java.awt.Color(220,221,221));
-    Teams no = new Teams("New Orleans Saints", new java.awt.Color(0,0,0), new java.awt.Color(201,176,116));
+    Teams no = new Teams("New Orleans Saints", new java.awt.Color(201,176,116), new java.awt.Color(0,0,0));
     Teams nyg = new Teams("New York Giants", new java.awt.Color(25,46,108), new java.awt.Color(175,3,52));
     Teams nyj = new Teams("New York Jets", new java.awt.Color(255,255,255), new java.awt.Color(28,50,44));
     Teams oak = new Teams("Oakland Raiders", new java.awt.Color(196,202,204), new java.awt.Color(0,0,0));
     Teams phi = new Teams("Philadelphia Eagles", new java.awt.Color(0,70,79), new java.awt.Color(0,0,0));
     Teams pit = new Teams("Pittsburgh Steelers", new java.awt.Color(0,0,0), new java.awt.Color(252,186,28));
-    Teams sd = new Teams("San Diego Chargers", new java.awt.Color(255,255,255), new java.awt.Color(0,23,60));
+    Teams sd = new Teams("San Diego Chargers", new java.awt.Color(0,23,60), new java.awt.Color(255,255,255));
     Teams sf = new Teams("San Francisco 49ers", new java.awt.Color(188,160,93), new java.awt.Color(196,3,30));
     Teams sea = new Teams("Seattle Seahawks", new java.awt.Color(12,34,68), new java.awt.Color(125,91,36));
     Teams stl = new Teams("St. Louis Rams", new java.awt.Color(13,37,76), new java.awt.Color(201,176,116));
-    Teams tb = new Teams("Tampa Bay Buccaneers", new java.awt.Color(107,98,48), new java.awt.Color(214,10,11));
-    Teams ten = new Teams("Tennessee Titans", new java.awt.Color(255,255,255), new java.awt.Color(100,143,204));
+    Teams tb = new Teams("Tampa Bay Buccaneers", new java.awt.Color(214,10,11), new java.awt.Color(0,0,0));
+    Teams ten = new Teams("Tennessee Titans", new java.awt.Color(100,143,204), new java.awt.Color(255,255,255));
     Teams was = new Teams("Washington Redskins", new java.awt.Color(87,32,46), new java.awt.Color(241,197,0));
     private javax.swing.JLabel teamLabel;
     private javax.swing.JLabel textField;
