@@ -61,38 +61,39 @@ public class PasserRatingGUI extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("NFL Passer Rating");
 
-        playerLabel.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        playerLabel.setFont(new java.awt.Font("Comic Sans MS", 1, 11)); // NOI18N
         playerLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         playerLabel.setText("Player");
 
-        teamLabel.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        teamLabel.setFont(new java.awt.Font("Comic Sans MS", 1, 11)); // NOI18N
         teamLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         teamLabel.setText("Team");
 
-        completionLabel.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        completionLabel.setFont(new java.awt.Font("Comic Sans MS", 1, 11)); // NOI18N
+        completionLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         completionLabel.setText("Completions");
 
-        attemptLabel.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        attemptLabel.setFont(new java.awt.Font("Comic Sans MS", 1, 11)); // NOI18N
         attemptLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         attemptLabel.setText("Attempts");
 
-        yardLabel.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        yardLabel.setFont(new java.awt.Font("Comic Sans MS", 1, 11)); // NOI18N
         yardLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         yardLabel.setText("Yards");
 
-        touchdownLabel.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        touchdownLabel.setFont(new java.awt.Font("Comic Sans MS", 1, 11)); // NOI18N
         touchdownLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         touchdownLabel.setText("Touchdowns");
 
-        passerRatingLabel.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        passerRatingLabel.setFont(new java.awt.Font("Comic Sans MS", 1, 11)); // NOI18N
         passerRatingLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         passerRatingLabel.setText("Passer Rating");
 
-        interceptionLabel.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        interceptionLabel.setFont(new java.awt.Font("Comic Sans MS", 1, 11)); // NOI18N
         interceptionLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         interceptionLabel.setText("Interceptions");
 
-        convertButton.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        convertButton.setFont(new java.awt.Font("Comic Sans MS", 1, 11)); // NOI18N
         convertButton.setText("Convert");
         convertButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -100,6 +101,7 @@ public class PasserRatingGUI extends javax.swing.JFrame {
             }
         });
 
+        teamComboBox.setFont(new java.awt.Font("Comic Sans MS", 1, 11)); // NOI18N
         teamComboBox.setModel(new javax.swing.DefaultComboBoxModel(new String[] {"NFL Team", az.getName(), atl.getName(), bal.getName(), buf.getName(), car.getName(), chi.getName(), cin.getName(), cle.getName(),
             dal.getName(), den.getName(), det.getName(), gb.getName(), hou.getName(), ind.getName(), jax.getName(), kc.getName(),
             mia.getName(), min.getName(), ne.getName(), no.getName(), nyg.getName(), nyj.getName(), oak.getName(), phi.getName(),
@@ -110,7 +112,7 @@ teamComboBox.addActionListener(new java.awt.event.ActionListener() {
     }
     });
 
-    textField.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
+    textField.setFont(new java.awt.Font("Comic Sans MS", 1, 24)); // NOI18N
     textField.setText("NFL Passer Rating");
 
     javax.swing.GroupLayout backgroundPanelLayout = new javax.swing.GroupLayout(backgroundPanel);
@@ -135,15 +137,15 @@ teamComboBox.addActionListener(new java.awt.event.ActionListener() {
                                     .addComponent(attemptLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)))
                             .addGap(151, 151, 151)
                             .addGroup(backgroundPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addGroup(backgroundPanelLayout.createSequentialGroup()
-                                    .addComponent(touchdownTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGap(30, 30, 30)
-                                    .addComponent(interceptionTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addComponent(teamLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 174, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGroup(backgroundPanelLayout.createSequentialGroup()
-                                    .addComponent(touchdownLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(interceptionLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                    .addGroup(backgroundPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addComponent(touchdownTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(touchdownLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGap(30, 30, 30)
+                                    .addGroup(backgroundPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                        .addComponent(interceptionLabel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                        .addComponent(interceptionTextField, javax.swing.GroupLayout.DEFAULT_SIZE, 72, Short.MAX_VALUE)))))
                         .addGroup(backgroundPanelLayout.createSequentialGroup()
                             .addComponent(playerTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGap(151, 151, 151)
@@ -153,19 +155,18 @@ teamComboBox.addActionListener(new java.awt.event.ActionListener() {
                     .addComponent(textField))
                 .addGroup(backgroundPanelLayout.createSequentialGroup()
                     .addGap(278, 278, 278)
-                    .addGroup(backgroundPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(backgroundPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                         .addComponent(yardTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(yardLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGroup(backgroundPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(passerRatingFormattedTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(convertButton))
+                        .addComponent(convertButton, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addGroup(backgroundPanelLayout.createSequentialGroup()
-                            .addGap(1, 1, 1)
-                            .addComponent(passerRatingLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                            .addGap(3, 3, 3)
+                            .addComponent(passerRatingLabel))
+                        .addComponent(passerRatingFormattedTextField, javax.swing.GroupLayout.Alignment.TRAILING)))
                 .addGroup(backgroundPanelLayout.createSequentialGroup()
                     .addGap(31, 31, 31)
                     .addComponent(pictureLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 250, javax.swing.GroupLayout.PREFERRED_SIZE)))
-            .addContainerGap(83, Short.MAX_VALUE))
+            .addGap(83, 83, 83))
     );
     backgroundPanelLayout.setVerticalGroup(
         backgroundPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -201,8 +202,8 @@ teamComboBox.addActionListener(new java.awt.event.ActionListener() {
             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
             .addComponent(passerRatingFormattedTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-            .addComponent(passerRatingLabel)
-            .addGap(84, 84, 84))
+            .addComponent(passerRatingLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addGap(68, 68, 68))
     );
 
     javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -260,7 +261,7 @@ teamComboBox.addActionListener(new java.awt.event.ActionListener() {
                         
                        passerRatingFormattedTextField.setValue(E);
                        passerRatingFormattedTextField.setEditable(false);
-                       passerRatingFormattedTextField.setForeground(Color.red);
+                       
                        passerRatingFormattedTextField.setHorizontalAlignment(JTextField.CENTER);
                              
     }//GEN-LAST:event_convertButtonActionPerformed
@@ -298,6 +299,7 @@ teamComboBox.addActionListener(new java.awt.event.ActionListener() {
         textField.setForeground(teamTextColor[teamIndex]);   
         convertButton.setForeground(teamTextColor[teamIndex]);
         convertButton.setBackground(teamColor[teamIndex]);
+        teamComboBox.setBackground(teamColor[teamIndex]);
 
     }//GEN-LAST:event_teamComboBoxActionPerformed
     protected static ImageIcon createImageIcon(String path) {
@@ -365,28 +367,28 @@ teamComboBox.addActionListener(new java.awt.event.ActionListener() {
     Teams atl = new Teams("Atlanta Falcons", new java.awt.Color(0,0,0), new java.awt.Color(201,35,63));
     Teams bal = new Teams("Baltimore Ravens", new java.awt.Color(36,18,92), new java.awt.Color(228,178,12));
     Teams buf = new Teams("Buffalo Bills", new java.awt.Color(4,50,132), new java.awt.Color(255,255,255));
-    Teams car = new Teams("Carolina Panthers", new java.awt.Color(214,214,214), new java.awt.Color(4,152,215));
+    Teams car = new Teams("Carolina Panthers", new java.awt.Color(0,0,0), new java.awt.Color(4,152,215));
     Teams chi = new Teams("Chicago Bears", new java.awt.Color(0,20,44), new java.awt.Color(223,97,8));
     Teams cin = new Teams("Cincinnati Bengals", new java.awt.Color(242,78,37), new java.awt.Color(0,0,0));
     Teams cle = new Teams("Cleveland Browns", new java.awt.Color(57,16,0), new java.awt.Color(236,86,20));
-    Teams dal = new Teams("Dallas Cowboys", new java.awt.Color(194,194,198), new java.awt.Color(13,37,76));
+    Teams dal = new Teams("Dallas Cowboys", new java.awt.Color(13,37,76), new java.awt.Color(194,194,198));
     Teams den = new Teams("Denver Broncos", new java.awt.Color(248,77,4), new java.awt.Color(12,34,68));
     Teams det = new Teams("Detroit Lions", new java.awt.Color(0,109,176), new java.awt.Color(165,172,175));
     Teams gb = new Teams("Green Bay Packers", new java.awt.Color(252,207,0), new java.awt.Color(49,63,54));
     Teams hou = new Teams("Houston Texans", new java.awt.Color(0,20,63), new java.awt.Color(201,36,63));
-    Teams ind = new Teams("Indianapolis Colts", new java.awt.Color(255,255,255), new java.awt.Color(4,58,116));
+    Teams ind = new Teams("Indianapolis Colts", new java.awt.Color(4,58,116), new java.awt.Color(255,255,255));
     Teams jax = new Teams("Jacksonville Jaguars", new java.awt.Color(0,103,121), new java.awt.Color(0,0,0));
     Teams kc = new Teams("Kansas City Chiefs", new java.awt.Color(178,0,50), new java.awt.Color(242,200,0));
-    Teams mia = new Teams("Miami Dolphins", new java.awt.Color(255,255,255), new java.awt.Color(255,130,0));
+    Teams mia = new Teams("Miami Dolphins", new java.awt.Color(0,145,158), new java.awt.Color(255,255,255));
     Teams min = new Teams("Minnesota Vikings", new java.awt.Color(88,44,131), new java.awt.Color(255,199,44));
     Teams ne = new Teams("New England Patriots", new java.awt.Color(12,34,68), new java.awt.Color(220,221,221));
-    Teams no = new Teams("New Orleans Saints", new java.awt.Color(201,176,116), new java.awt.Color(0,0,0));
+    Teams no = new Teams("New Orleans Saints", new java.awt.Color(0,0,0), new java.awt.Color(201,176,116));
     Teams nyg = new Teams("New York Giants", new java.awt.Color(25,46,108), new java.awt.Color(175,3,52));
-    Teams nyj = new Teams("New York Jets", new java.awt.Color(255,255,255), new java.awt.Color(28,50,44));
+    Teams nyj = new Teams("New York Jets", new java.awt.Color(28,50,44), new java.awt.Color(255,255,255));
     Teams oak = new Teams("Oakland Raiders", new java.awt.Color(196,202,204), new java.awt.Color(0,0,0));
     Teams phi = new Teams("Philadelphia Eagles", new java.awt.Color(0,70,79), new java.awt.Color(0,0,0));
     Teams pit = new Teams("Pittsburgh Steelers", new java.awt.Color(0,0,0), new java.awt.Color(252,186,28));
-    Teams sd = new Teams("San Diego Chargers", new java.awt.Color(0,23,60), new java.awt.Color(255,255,255));
+    Teams sd = new Teams("San Diego Chargers", new java.awt.Color(0,23,60), new java.awt.Color(255,193,12));
     Teams sf = new Teams("San Francisco 49ers", new java.awt.Color(188,160,93), new java.awt.Color(196,3,30));
     Teams sea = new Teams("Seattle Seahawks", new java.awt.Color(12,34,68), new java.awt.Color(125,91,36));
     Teams stl = new Teams("St. Louis Rams", new java.awt.Color(13,37,76), new java.awt.Color(201,176,116));
