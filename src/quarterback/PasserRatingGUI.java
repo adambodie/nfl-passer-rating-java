@@ -104,8 +104,8 @@ public class PasserRatingGUI extends javax.swing.JFrame {
         teamComboBox.setFont(new java.awt.Font("Comic Sans MS", 1, 11)); // NOI18N
         teamComboBox.setModel(new javax.swing.DefaultComboBoxModel(new String[] {"NFL Team", az.getName(), atl.getName(), bal.getName(), buf.getName(), car.getName(), chi.getName(), cin.getName(), cle.getName(),
             dal.getName(), den.getName(), det.getName(), gb.getName(), hou.getName(), ind.getName(), jax.getName(), kc.getName(),
-            mia.getName(), min.getName(), ne.getName(), no.getName(), nyg.getName(), nyj.getName(), oak.getName(), phi.getName(),
-            pit.getName(), sd.getName(), sf.getName(), sea.getName(), stl.getName(), tb.getName(), ten.getName(), was.getName() }));
+            la.getName(), mia.getName(), min.getName(), ne.getName(), no.getName(), nyg.getName(), nyj.getName(), oak.getName(),
+            phi.getName(), pit.getName(), sd.getName(), sf.getName(), sea.getName(), tb.getName(), ten.getName(), was.getName() }));
 teamComboBox.addActionListener(new java.awt.event.ActionListener() {
     public void actionPerformed(java.awt.event.ActionEvent evt) {
         teamComboBoxActionPerformed(evt);
@@ -274,17 +274,17 @@ teamComboBox.addActionListener(new java.awt.event.ActionListener() {
         Color[] teamColor = {null, az.getColor(), atl.getColor(), bal.getColor(),
         buf.getColor(), car.getColor(), chi.getColor(), cin.getColor(), cle.getColor(),
         dal.getColor(), den.getColor(), det.getColor(), gb.getColor(), hou.getColor(), 
-        ind.getColor(), jax.getColor(), kc.getColor(), mia.getColor(), min.getColor(), 
-        ne.getColor(),  no.getColor(), nyg.getColor(), nyj.getColor(), oak.getColor(), 
-        phi.getColor(), pit.getColor(), sd.getColor(), sf.getColor(), sea.getColor(), 
-        stl.getColor(), tb.getColor(), ten.getColor(), was.getColor()};
+        ind.getColor(), jax.getColor(), kc.getColor(), la.getColor(), mia.getColor(), 
+        min.getColor(), ne.getColor(),  no.getColor(), nyg.getColor(), nyj.getColor(),  
+        oak.getColor(), phi.getColor(), pit.getColor(), sd.getColor(), sf.getColor(), 
+        sea.getColor(), tb.getColor(), ten.getColor(), was.getColor()};
         Color[] teamTextColor = {null, az.getTextColor(), atl.getTextColor(), bal.getTextColor(),
         buf.getTextColor(), car.getTextColor(), chi.getTextColor(), cin.getTextColor(), cle.getTextColor(),
         dal.getTextColor(), den.getTextColor(), det.getTextColor(), gb.getTextColor(), hou.getTextColor(), 
-        ind.getTextColor(), jax.getTextColor(), kc.getTextColor(), mia.getTextColor(), min.getTextColor(), 
-        ne.getTextColor(),  no.getTextColor(), nyg.getTextColor(), nyj.getTextColor(), oak.getTextColor(), 
-        phi.getTextColor(), pit.getTextColor(), sd.getTextColor(), sf.getTextColor(), sea.getTextColor(), 
-        stl.getTextColor(), tb.getTextColor(), ten.getTextColor(), was.getTextColor()};
+        ind.getTextColor(), jax.getTextColor(), kc.getTextColor(), la.getTextColor(), mia.getTextColor(),  
+        min.getTextColor(), ne.getTextColor(),  no.getTextColor(), nyg.getTextColor(), nyj.getTextColor(), 
+        oak.getTextColor(), phi.getTextColor(), pit.getTextColor(), sd.getTextColor(), sf.getTextColor(),
+        sea.getTextColor(), tb.getTextColor(), ten.getTextColor(), was.getTextColor()};
         pictureLabel.setIcon(createImageIcon(teamName+ ".gif"));
         backgroundPanel.setBackground(teamColor[teamIndex]);
         teamLabel.setForeground(teamTextColor[teamIndex]);
@@ -379,6 +379,7 @@ teamComboBox.addActionListener(new java.awt.event.ActionListener() {
     Teams ind = new Teams("Indianapolis Colts", new java.awt.Color(4,58,116), new java.awt.Color(255,255,255));
     Teams jax = new Teams("Jacksonville Jaguars", new java.awt.Color(0,103,121), new java.awt.Color(0,0,0));
     Teams kc = new Teams("Kansas City Chiefs", new java.awt.Color(178,0,50), new java.awt.Color(242,200,0));
+    Teams la = new Teams("Los Angeles Rams", new java.awt.Color(13,37,76), new java.awt.Color(201,176,116));
     Teams mia = new Teams("Miami Dolphins", new java.awt.Color(0,145,158), new java.awt.Color(255,255,255));
     Teams min = new Teams("Minnesota Vikings", new java.awt.Color(88,44,131), new java.awt.Color(255,199,44));
     Teams ne = new Teams("New England Patriots", new java.awt.Color(12,34,68), new java.awt.Color(220,221,221));
@@ -391,7 +392,6 @@ teamComboBox.addActionListener(new java.awt.event.ActionListener() {
     Teams sd = new Teams("San Diego Chargers", new java.awt.Color(0,23,60), new java.awt.Color(255,193,12));
     Teams sf = new Teams("San Francisco 49ers", new java.awt.Color(188,160,93), new java.awt.Color(196,3,30));
     Teams sea = new Teams("Seattle Seahawks", new java.awt.Color(12,34,68), new java.awt.Color(125,91,36));
-    Teams stl = new Teams("St. Louis Rams", new java.awt.Color(13,37,76), new java.awt.Color(201,176,116));
     Teams tb = new Teams("Tampa Bay Buccaneers", new java.awt.Color(214,10,11), new java.awt.Color(0,0,0));
     Teams ten = new Teams("Tennessee Titans", new java.awt.Color(100,143,204), new java.awt.Color(255,255,255));
     Teams was = new Teams("Washington Redskins", new java.awt.Color(87,32,46), new java.awt.Color(241,197,0));
